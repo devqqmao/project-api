@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'hi';
+  src: url(/fonts/Chomsky-8MOa2.otf);
+}
+
+.selectListsInp {
+  letter-spacing: 0.025rem;
+}
+
+.inside2 input {
+  letter-spacing: 0.025rem;
+}
+
+header {
+  font-family: 'hi';
+  text-align: center;
+  border: 2.5px solid black;
+  line-height: 2rem;
+  white-space: nowrap;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.outside {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+main {
+  flex: 8 200px;
+  border: 2.5px solid black;
+  border-left: none;
+}
+
+aside {
+  font-family: 'hi';
+  flex: 1 100px;
+  border: 2.5px solid black;
+}
+
+div [class^='inside'] {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-bottom: 10px;
+  border-bottom: 2.5px solid black;
+}
+
+div [class^='inside'] * {
+  margin: 15px;
+  margin-top: 5px;
+}
+
+div [class^='inside'] p {
+  text-align: center;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+div [class^='inside'] label {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+footer {
+  font-family: 'hi';
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+main .buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+main .buttons button {
+  font-size: 1.2rem;
+  flex: 1px 100px;
+  width: 150px;
+}
+
+button {
+  white-space: nowrap;
+  letter-spacing: 0.2rem;
+  font-family: 'hi';
+  border-style: none;
+  margin: 10px;
+  border: 2.5px solid black;
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+section {
+  font-size: calc(0.5rem + 20%);
+  border: 2.5px solid black;
+  margin: 20px;
+  flex: 1 250px;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+section .top {
+  flex: 1 100px;
+  font-family: Courier, monospace;
+  letter-spacing: 0.1rem;
+  background-color: black;
+  margin: 0;
+  color: white;
+  min-height: fit-content;
+  display: flex;
+  justify-content: space-around;
+}
+
+section .divl {
+  margin: 5px;
+  flex: 1 75px;
+}
+
+section .divr {
+  flex: 4 75px;
+  text-align: right;
+  margin-right: 5px;
+}
+
+section .rank {
+  margin: 0;
+  color: black;
+  z-index: 2;
+  background-color: white;
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+  line-height: 4.5rem;
+  text-align: center;
+}
+
+.imgcont {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+
+/* Hover */
+
+.paraover {
+  color: white;
+  font-family: 'hi';
+  font-size: 2.5rem;
+  visibility: hidden;
+  text-align: center;
+  white-space: nowrap;
+  margin: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 4rem;
+}
+
+.paraover2 {
+  font-family: Courier, monospace;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  margin: 10px;
+  text-align: start;
+  visibility: hidden;
+  max-height: 310px;
+  overflow-y: hidden;
+}
+
+.overviewBtn {
+  align-self: center;
+  padding: 10px;
+  width: 200px;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  visibility: hidden;
+}
+
+.checkbox {
+  position: relative;
+  top: 2.5px;
+  right: 5px;
+}
+
+.historyOffset, .price, .age {
+  width: 120px;
+}
+
+
+/* Best Sellers History */
+
+.ps {
+  margin: 0;
+  font-family: 'hi';
+  font-size: 0.5rem;
+  line-height: 0.5;
+}

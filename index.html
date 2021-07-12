@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="defining_v.js" defer></script>
+  <script src="defining_f.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+
+  <header>The New York Times Best Sellers</header>
+  <div class="outside">
+    <aside>
+      <div class="inside1">
+        <p>List Data</p>
+        <label for="select">List name:</label>
+        <select class="selectLists">
+        </select>
+        <label for="text">List name: (optional)</label>
+        <input class="selectListsInp" type="text" placeholder="e.g. E-Book Fiction">
+        <label for="start-date">Published on:</label>
+        <input type="date" class="date" pattern="[0-9] {8}">
+        <label for="date">Current-date:
+          <input type="checkbox" class="checkbox">
+        </label>
+        <button class="selectBtn">Look up</button>
+      </div>
+      <footer>All credentials to: NYT</footer>
+    </aside>
+    <main>
+      <div class="buttons">
+        <button class="previous">Previous 10</button>
+        <button class="next">Next 10</button>
+      </div>
+      <div class="main"></div>
+    </main>
+  </div>
+
+</body>
+
+</html>
