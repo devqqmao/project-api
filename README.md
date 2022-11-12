@@ -6,6 +6,7 @@
 API sample response for categories:
 
 ```JavaScript
+// header
 {status: 'OK', copyright: 'Copyright (c) 2022 The New York Times Company.  All Rights Reserved.', num_results: 59, results: Array(59)}
 // results
 {
@@ -21,7 +22,7 @@ API sample response for books:
 ```JavaScript
 {results: 
   {books:
-    {0: 
+    {
       age_group: "",
       amazon_product_url: "https://www.amazon.com/dp/1668001225?tag=NYTBSREV-20",
       article_chapter_link: "",
