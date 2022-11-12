@@ -1,6 +1,6 @@
-// -------------------- defining list names --------------------
+// -------------------- Define list names --------------------
 
-// defining fetchAndDecode for list names
+// Define fetchAndDecode for list names
 function fetchAndDecode(inserturl, func) {
   fetch(inserturl).then(response => {
     if (response.status === 429) {
@@ -20,7 +20,7 @@ function fetchAndDecode(inserturl, func) {
   })
 }
 
-// builidng list names 
+// Build list names 
 function defLists() {
   for (i = 0;i < lists.results.length;i++) {
     const option = document.createElement('option')
@@ -31,7 +31,7 @@ function defLists() {
   init()
 }
 // -------------------- handlers --------------------
-// empty function
+// empty json handler
 function empty() {
   const para = document.createElement('p')
   main.appendChild(para)
@@ -49,7 +49,7 @@ function selectKey(urlApiKey) {
   return url
 }
 
-// displaying
+// Display
 function display() {
   check = listResult
   while (main.firstChild) {
@@ -67,7 +67,7 @@ function display() {
   overviewBtnClick()
 }
 
-// defining draw
+// Draw
 function draw(data) {
   console.log('3')
   console.log('draw data:', data)
@@ -153,7 +153,7 @@ function draw(data) {
 
 }
 
-// defining hover
+// Define hover
 function hover() {
 
   const overlayarr = document.querySelectorAll('.imgcont')
@@ -176,7 +176,7 @@ function hover() {
   }
 }
 
-// defining overviewBtnClick
+// Define overviewBtnClick
 function overviewBtnClick() {
   const btnarr = document.querySelectorAll('.overviewBtn')
   for (el of btnarr) {
@@ -200,7 +200,7 @@ function overviewBtnClick() {
   }
 }
 
-// defining openReviewLink
+// Define openReviewLink
 function openReviewLink(response, e) {
   if (!response.num_results) {
     e.target.textContent = 'No results :('
@@ -212,7 +212,7 @@ function openReviewLink(response, e) {
   }
 }
 
-// defining next button
+// Define next button
 function nextFn() {
   console.log('4', listResult)
   pageCounter += 1
@@ -243,7 +243,8 @@ function nextFn() {
 
 
 }
-// defining prev btn
+
+// Define prev btn
 function prevFn() {
   if (pageCounter !== 0) {
     pageCounter -= 1
@@ -269,7 +270,7 @@ function prevFn() {
   }
 }
 
-// defining listGroupFn (show)
+// Define listGroupFn
 function listGroupFn() {
 
   pageCounter = 0
@@ -329,4 +330,3 @@ function listGroupFn() {
   selectDateCurrent.value = ''
 
 }
-

@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'hi';
-  src: url(/fonts/Chomsky-8MOa2.otf);
+  src: url(./Chomsky-8MOa2.otf);
 }
 
 .selectListsInp {
@@ -205,14 +205,4 @@ section .rank {
 
 .historyOffset, .price, .age {
   width: 120px;
-}
-
-
-/* Best Sellers History */
-
-.ps {
-  margin: 0;
-  font-family: 'hi';
-  font-size: 0.5rem;
-  line-height: 0.5;
 }
