@@ -57,7 +57,6 @@ function display() {
   }
   for (i = 0;i < 10;i++) {
     if (check.results.books[i]) {
-      console.log('check inside display', check)
       draw(check)
     } else {
       break
@@ -69,8 +68,6 @@ function display() {
 
 // Draw
 function draw(data) {
-  console.log('3')
-  console.log('draw data:', data)
   const section = document.createElement('section')
   const para = document.createElement('p')
   const paraa = document.createElement('p')
@@ -113,13 +110,9 @@ function draw(data) {
   overviewBtn.textContent = 'Learn more'
 
 
-  console.log('1')
   json = data.results.books
-  console.log('jsoncheck', json)
-  console.log(i)
   isbnReview = json[i]['primary_isbn13']
   overviewBtn.setAttribute('isbn13', isbnReview)
-  console.log('urlcheck', json[i].book_image)
   imgcont.style.backgroundImage = `url(${json[i].book_image})`
 
   section.style.maxWidth = json[i].book_image_width + 'px'
@@ -214,17 +207,14 @@ function openReviewLink(response, e) {
 
 // Define next button
 function nextFn() {
-  console.log('4', listResult)
   pageCounter += 1
   json = listResult.results.books
-  console.log()
 
   if (pageCounter - json.length / 10 < 0) {
     while (main.firstChild) {
       main.removeChild(main.firstChild)
     }
 
-    console.log('json', json)
     for (i = pageCounter * 10;i < (pageCounter + 1) * 10;i++) {
       if (json[i]) {
         draw(listResult)
@@ -253,7 +243,6 @@ function prevFn() {
     while (main.firstChild) {
       main.removeChild(main.firstChild)
     }
-    console.log('json', json)
     for (i = pageCounter * 10;i < (pageCounter + 1) * 10;i++) {
       if (json[i]) {
         draw(listResult)

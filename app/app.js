@@ -1,9 +1,8 @@
-
+// Build starting view
 fetchAndDecode(urlFinLists, defLists)
 
-// Initializing
+// Init
 function init() {
-  console.log('init')
   prevBtn.addEventListener('click', prevFn)
   nextBtn.addEventListener('click', nextFn)
 
