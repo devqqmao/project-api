@@ -1,7 +1,7 @@
 # New York Times bestsellers
 Сайт по [API NYT](https://developer.nytimes.com/docs/books-product/1/overview) подтягивает данные о книгах-бестселлерах за последние n лет.
 
-Страничка сайта: [website]([https://daniliambo.github.io/project-api/])
+Страничка сайта: [website](https://daniliambo.github.io/project-api/)
 
 API sample response for categories:
 
